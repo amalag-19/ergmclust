@@ -14,7 +14,6 @@ A brute force approach requires O($K^N$) time complexity where K is the number o
 Further taking advantage of stochastic estimation, O($N^2K^2$) could be reduced to O($N^2$) by sub-sampling the cluster memberships of nodes.
 
 
-
 Here is a brief timeline of the research in the field of Exponential Family Random Graph Models –
 
 <img width="871" alt="Screenshot 2024-02-06 at 11 02 40 PM" src="https://github.com/amalag-19/netclust/assets/10363788/845606b7-5f0d-4bdb-825e-8fab4f77fe3c">
