@@ -18,8 +18,6 @@ Here is a brief timeline of the research in the field of Exponential Family Rand
 
 <img width="871" alt="Screenshot 2024-02-06 at 11 02 40 PM" src="https://github.com/amalag-19/netclust/assets/10363788/845606b7-5f0d-4bdb-825e-8fab4f77fe3c">
 
-[![amalag's LeetCode stats](https://leetcode-stats-six.vercel.app/?username=amalag)](https://leetcode.com/amalag/)
-
 
 
 
