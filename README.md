@@ -13,7 +13,26 @@ Here is a brief timeline of the research in the field of Exponential Family Rand
 <img width="871" alt="Screenshot 2024-02-06 at 11 02 40 PM" src="https://github.com/amalag-19/netclust/assets/10363788/845606b7-5f0d-4bdb-825e-8fab4f77fe3c">
 
 ## Algorithm
-A picture is worth a thousand words, so I'll draw a relatively laymen's figure to illustrate the objective and how lower bound is maximized to achieve that.
+Estimation algorithms in ERGMs are based on variational expectation maximization. That's a bunch of jargon, that I break down below
+
+### Expectation-Maximization (EM) Algorithm: Imagine you're trying to figure out the heights of people in a dark room, but you can only measure their shadows. In EM, you have two steps:
+
+1. Expectation Step (E-step): Make an educated guess about their heights based on the shadows.
+2. Maximization Step (M-step): Adjust your guess about their heights based on the shadows and any other prior knowledge you have.
+
+### Variational EM: Now, let's add some flexibility. Instead of being absolutely certain about your guess (like in traditional EM), you allow for some uncertainty. It's like saying, "I'm pretty sure this person is around 6 feet tall, but there's a chance they could be a bit taller or shorter." This flexibility lets you capture more complex patterns in your data.
+
+### How it Works:
+
+Variational Step: Introduce a set of parameters that represent this uncertainty. For example, instead of just guessing one height for each person, you guess a range of possible heights.
+Expectation-Maximization Steps: Alternate between refining your guesses about the heights and updating the parameters that represent the uncertainty. In each iteration, try to find the best combination of heights and uncertainties that explain the shadows you observe.
+
+### Why it's Useful:
+Variational EM is handy when your data is complex and doesn't fit neatly into simple patterns. By allowing for uncertainty in your guesses, you can capture more nuances in the data and get better insights.
+
+In essence, Variational EM is like trying to solve a puzzle in a dimly lit room where you're not entirely sure about the shapes of the pieces. You make educated guesses, adjust them based on what you see, and keep refining your understanding until you find the best fit, all while acknowledging that there might be some ambiguity in your observations.
+
+A picture is worth a thousand words, so I'll draw a less technical figure to illustrate the workings of Variational EM algorithm and how the lower bound (ELBO) is maximized iteratively.
 <img width="917" alt="image" src="https://github.com/amalag-19/ergmclust/assets/10363788/5f088bc2-899f-4302-9529-bcdb2d977bc9">
 
 
