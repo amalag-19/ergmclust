@@ -4,6 +4,7 @@ The ergmclust package is an R and C++ implementation to cluster and estimate par
 ## Tech Stack
 R, C++
 
+## Introduction
 For static undirected and directed networks, the models were originally proposed in Vu et. al., 2013. In my Ph.D. I extended the research by developing an elaborate framework that clusters network data usually encountered in real life situations, such as social networks where communities evolve with time, product review networks where customers review different products on an ecommerce platform in a bipartite setting, [weighted river networks](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mVExpwIAAAAJ&citation_for_view=mVExpwIAAAAJ:LkGwnXOMwfcC) with applications to safeguard water quality standards, trade networks, email networks, etc.
 
 This readme is a guided tour to the algorithms used in these models in laymen terms (for technical details, you can always read [my peer reviewed technical articles](https://scholar.google.com/citations?user=mVExpwIAAAAJ&hl=en&oi=ao)), their scalability, and applicability in day to day real world applications and future scope.
