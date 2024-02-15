@@ -1,17 +1,20 @@
-\name{wrapper_HMM_stat_undir_Dens}
-\alias{wrapper_HMM_stat_undir_Dens}
+\name{wrapper_weighted_stat_undir}
+\alias{wrapper_weighted_stat_undir}
 \title{
-An estimation framework for static binary undirected networks.
+An estimation framework for weighted static binary undirected networks.
 }
 \description{
-The inner wrapper function wrapper_HMM_stat_undir_Dens() is an estimation framework for binary static undirected network based on variational Expectation-Maximization algorithm.
+The inner wrapper function wrapper_weighted_stat_undir() is an estimation framework for weighted binary static undirected network based on variational Expectation-Maximization algorithm.
 }
 \usage{
-wrapper_HMM_stat_undir_Dens(adjmat, K, thresh, iter.max, coef.init)
+wrapper_weighted_stat_undir(adjmat, wtmat, K, thresh=10^(-6), iter.max, coef.init)
 }
 \arguments{
   \item{adjmat}{
   Array of the network adjacency matrices.
+  }
+  \item{wtmat}{
+  Array of the network weight matrices.
   }
   \item{K}{
   Number of clusters for which the estimation must be performed.
@@ -19,9 +22,10 @@ wrapper_HMM_stat_undir_Dens(adjmat, K, thresh, iter.max, coef.init)
   \item{thresh}{
   Convergence threshold for estimation, the default being 1e-6.
   }
-  \item{iter.max}{The maximum number of iterations after which the algorithm is terminated. The default value is set as 200.
+  \item{iter.max}{
+  The maximum number of iterations after which the algorithm is terminated. The default value is set as 200.
   }
-  \item{coef.init}{
+  \item{theta_init}{
   The initial value of the density, stability, transitivity parameters for which clustering is desired, the default being 1e-1.
   }
 }

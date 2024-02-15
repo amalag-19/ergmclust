@@ -1,40 +1,48 @@
-\name{netclust}
-\alias{netclust}
+\name{ergmclust}
+\alias{ergmclust}
 \title{
-ERGM clustering and estimation.
+Model-Based Clustering of Large Networks Through ERGMs.
 }
 \description{
-Model-based clustering and cluster-specific parameter estimation through the mixed membership ERGMs using VEM algorithm.
+Model-based clustering and cluster-specific parameter estimation through the mixed membership Exponential-Family Random Graph Models (ERGMs) using Variational Expectation-Maximization  algorithm.
 }
 \usage{
-netclust(adjmat, K, directed = FALSE, thresh = 1e-06, iter.max = 200, coef.init = NULL)
+ergmclust(adjmat, K, directed = FALSE, weighted = FALSE, thresh = 1e-06, 
+iter.max = 200, coef.init = NULL, wtmat = NULL)
 }
 \arguments{
   \item{adjmat}{
   An object of class matrix of dimension (N x N) containing the adjacency matrix, where N is the number of nodes in the network.
-}
+  }
   \item{K}{
-  Number of clusters in the mixed membership ERGM.
-}
+  Number of clusters in the mixed membership Exponential-Family Random Graph Models (ERGMs).
+  }
   \item{directed}{
   If \code{TRUE}, the network is supposed to be directed (and therefore adjmat is must be asymmetric in general). By default, this is set as \code{FALSE}.
-}
+  }
+  \item{weighted}{
+  If \code{TRUE}, the network is supposed to be weighted. By default, this is set as \code{FALSE}.
+  }
   \item{thresh}{
-  Optional user-supplied convergence threshold for relative error in the objective in VEM algorithm. The default value is set as 1e-06. 
-}
+  Optional user-supplied convergence threshold for relative error in the objective in Variational Expectation-Maximization (VEM) algorithm. The default value is set as 1e-06. 
+  }
   \item{iter.max}{
   The maximum number of iterations after which the algorithm is terminated. The default value is set as 200.
   }
   \item{coef.init}{
-  Optional user-supplied network canonical parameter vector (K-dimensional). Default is \code{NULL} and netclust chooses a random perturbation around zero vector.
+  ergmclust chooses the default value as a random perturbation around K-dim zero vector; default is \code{NULL}.
+  }
+  \item{wtmat}{
+  An object of class matrix of dimension (N x N) containing the weight matrix, where N is the number of nodes in the network; default is \code{NULL}.
+  }
 }
-}
+
 \details{
-netclust is an R implementation for the model-based clustering through the mixed membership ERGMs with undirected and directed network data. It uses the VEM algorithm to solve the approximate maximum likelihood estimation. 
+ergmclust is an R implementation for the model-based clustering through the mixed membership Exponential-Family Random Graph Models (ERGMs) with undirected and directed network data. It uses the Variational Expectation-Maximization algorithm to solve the approximate maximum likelihood estimation. 
 }
 \value{
-Returns a list of \code{netclust} object. Each object of class \code{netclust} is a \code{list} with the following components:
-  \item{coefficients}{An object of class vector of size (K x 1) containing the canonical network parameters in ERGM.}
+Returns a list of \code{ergmclust} object. Each object of class \code{ergmclust} is a \code{list} with the following components:
+  \item{coefficients}{An object of class vector of size (K x 1) containing the canonical network parameters in Exponential-Family Random Graph Models (ERGMs).}
   \item{probability}{An object of class matrix of size (N x K) containing the mixed membership probabilities of the model for N nodes distributed in K clusters.}
   \item{clust.labels}{An object of class vector of size (N x 1) containing the cluster membership labels in \{1, ..., K\} for N nodes.}
   \item{ICL}{Integrated Classification Likelihood (ICL) score calculated from completed data log-likelihood and penalty terms.}
@@ -64,13 +72,13 @@ Maintainer:  Amal Agarwal <amalag.19@gmail.com>
 \examples{
 ## undirected network:
 data(tradenet)
-## clustering and estimation for K = 4 groups
-netclust(adjmat = tradenet, K = 4, directed = FALSE, 
+## clustering and estimation for K = 2 groups
+ergmclust(adjmat = tradenet, K = 2, directed = FALSE, 
 thresh = 1e-06, iter.max = 120, coef.init = NULL)
 
 ## directed network:
 data(armsnet)
-## clustering and estimation for K = 4 groups
-netclust(adjmat = armsnet, K = 2, directed = TRUE, 
+## clustering and estimation for K = 2 groups
+ergmclust(adjmat = armsnet, K = 2, directed = TRUE, 
 thresh = 1e-06, iter.max = 120, coef.init = NULL)
 }

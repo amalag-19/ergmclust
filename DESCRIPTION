@@ -1,22 +1,24 @@
-Package: netclust
+Package: ergmclust
 Type: Package
-Title: Model-based Clustering of Networks through Exponential-family
-        Random Graph Models (ERGMs)
+Title: ERGM-Based Network Clustering
 Version: 1.0.0
-Date: 2019-08-28
-Author: Amal Agarwal [aut, cre],
-        David R. Hunter [aut], 
-        Kevin H. Lee [aut],
-        Lingzhou Xue [aut, cre], 
-        Anna Yinqi Zhang [cre]
-Maintainer: Amal Agarwal <amalag.19@gmail.com>
-Description: The netclust package is an R implementation to cluster and estimate parameters in ERGMs for static undirected and directed networks, developed in Vu et. al., 2013 
-          <https://projecteuclid.org/euclid.aoas/1372338477>.
+Date: 2021-01-24
+Authors@R: c(person("Amal", "Agarwal", role = c("aut", "cre"), 
+            email = "amalag.19@gmail.com"),
+            person("Kevin H.", "Lee", role = "aut"),
+            person("Lingzhou", "Xue", role = c("aut", "ths")),
+            person("Anna Yinqi", "Zhang", role = "com"))
+Description: Implements clustering and estimates parameters in Exponential-Family Random Graph Models (ERGMs) for static undirected and directed networks, developed in Vu et. al. (2013) <https://projecteuclid.org/euclid.aoas/1372338477>.
 Encoding: UTF-8
 License: GPL-2
-Imports: Rcpp (>= 1.0.1), MASS, lda, quadprog, igraph, viridis
+Imports: Rcpp (>= 1.0.1), MASS, lda, quadprog, igraph, viridis, locfit
 LinkingTo: Rcpp, RcppArmadillo
 Depends: R (>= 2.10)
 URL: https://sites.psu.edu/sldm/netclust/
 NeedsCompilation: yes
-Packaged: 2019-08-29 03:09:34 UTC; anna_zhang_jmk
+Packaged: 2022-01-06 20:17:58 UTC; anna_zhang_jmk
+Author: Amal Agarwal [aut, cre],
+  Kevin H. Lee [aut],
+  Lingzhou Xue [aut, ths],
+  Anna Yinqi Zhang [com]
+Maintainer: Amal Agarwal <amalag.19@gmail.com>

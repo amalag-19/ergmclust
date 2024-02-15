@@ -1,17 +1,17 @@
-\name{netclust-package}
-\alias{netclust-package}
+\name{ergmclust-package}
+\alias{ergmclust-package}
 \docType{package}
 \title{
-Model-based Clustering of Networks through ERGMs with estimation based on Variational Expectation Maximization (VEM) Algorithm.
+ERGM-based network clustering
 }
 \description{
 Clustering and estimation of parameters in ERGMs for static undirected and directed networks with inference based on VEM algorithm.
 }
 \details{
-The netclust package is an R implementation that serves as an estimation framework for static binary networks, in both undirected and directed cases. Its main functions include netclust for clustering and parameter estimation, netclust.ICL for model selection, and netclust.plot for visualizing the clustered network. The package is based on VEM algorithm (Vu et. al., 2013) and works well with both simulated and real-world data.
+The ergmclust package is an R implementation that serves as an estimation framework for static binary networks, in both undirected and directed cases. Its main functions include ergmclust for clustering and parameter estimation, ergmclust.ICL for model selection, and ergmclust.plot for visualizing the clustered network. The package is based on VEM algorithm (Vu et. al., 2013) and works well with both simulated and real-world data.
 }
 \author{
-Authors: Amal Agarwal [aut, cre], David R. Hunter [aut], Kevin Lee [aut], Lingzhou Xue [aut, cre], Anna Yinqi Zhang [cre]
+Authors: Amal Agarwal [aut, cre], Kevin Lee [aut], Lingzhou Xue [aut, cre], Anna Yinqi Zhang [cre]
 
 Maintainer: Amal Agarwal <amalag.19@gmail.com>
 }
