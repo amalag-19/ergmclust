@@ -13,6 +13,11 @@ Here is a brief timeline of the research in the field of Exponential Family Rand
 <img width="871" alt="Screenshot 2024-02-06 at 11 02 40 PM" src="https://github.com/amalag-19/netclust/assets/10363788/845606b7-5f0d-4bdb-825e-8fab4f77fe3c">
 
 ## Algorithm
+A picture is worth a thousand words, so I'll draw a relatively laymen's figure to illustrate the objective and how lower bound is maximized to achieve that.
+<img width="917" alt="image" src="https://github.com/amalag-19/ergmclust/assets/10363788/5f088bc2-899f-4302-9529-bcdb2d977bc9">
+
+
+## Implementation
 
 
 ## Scalability
