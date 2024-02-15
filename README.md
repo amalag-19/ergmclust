@@ -1,4 +1,4 @@
-# netclust
+# ergmclust
 The netclust package is an R implementation to cluster and estimate parameters in Exponential Family Random Graph Models popularly known as ERGMs.
 
 For static undirected and directed networks, the models were originally proposed in Vu et. al., 2013. In my Ph.D. I extended the research by developing an elaborate framework that clusters network data usually encountered in real life situations, such as social networks where communities evolve with time, product review networks where customers review different products on an ecommerce platform in a bipartite setting, [weighted river networks](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mVExpwIAAAAJ&citation_for_view=mVExpwIAAAAJ:LkGwnXOMwfcC) with applications to safeguard water quality standards, trade networks, email networks, etc.
