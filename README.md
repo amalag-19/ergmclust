@@ -15,15 +15,16 @@ Here is a brief timeline of the research in the field of Exponential Family Rand
 ## Algorithm
 Estimation algorithms in ERGMs are based on variational expectation maximization. That's a bunch of jargon, that I break down below
 
-### Expectation-Maximization (EM) Algorithm: Imagine you're trying to figure out the heights of people in a dark room, but you can only measure their shadows. In EM, you have two steps:
+### Expectation-Maximization (EM) Algorithm:
+Imagine you're trying to figure out the heights of people in a dark room, but you can only measure their shadows. In EM, you have two steps:
 
 1. Expectation Step (E-step): Make an educated guess about their heights based on the shadows.
 2. Maximization Step (M-step): Adjust your guess about their heights based on the shadows and any other prior knowledge you have.
 
-### Variational EM: Now, let's add some flexibility. Instead of being absolutely certain about your guess (like in traditional EM), you allow for some uncertainty. It's like saying, "I'm pretty sure this person is around 6 feet tall, but there's a chance they could be a bit taller or shorter." This flexibility lets you capture more complex patterns in your data.
+### Variational EM: 
+Now, let's add some flexibility. Instead of being absolutely certain about your guess (like in traditional EM), you allow for some uncertainty. It's like saying, "I'm pretty sure this person is around 6 feet tall, but there's a chance they could be a bit taller or shorter." This flexibility lets you capture more complex patterns in your data.
 
 ### How it Works:
-
 Variational Step: Introduce a set of parameters that represent this uncertainty. For example, instead of just guessing one height for each person, you guess a range of possible heights.
 Expectation-Maximization Steps: Alternate between refining your guesses about the heights and updating the parameters that represent the uncertainty. In each iteration, try to find the best combination of heights and uncertainties that explain the shadows you observe.
 
