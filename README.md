@@ -36,7 +36,7 @@ A picture is worth a thousand words, so I'll draw a less technical figure to ill
 <img width="917" alt="image" src="https://github.com/amalag-19/ergmclust/assets/10363788/5f088bc2-899f-4302-9529-bcdb2d977bc9">
 
 ## Implementation
-For implementation details please refer to the package documentation here.
+For implementation details please refer to the package documentation [here](https://github.com/amalag-19/ergmclust/blob/master/ergmclust_documentation.pdf).
 
 ## Scalability
 
