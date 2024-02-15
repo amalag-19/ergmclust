@@ -3,7 +3,7 @@ The ergmclust package is an R implementation to cluster and estimate parameters 
 
 For static undirected and directed networks, the models were originally proposed in Vu et. al., 2013. In my Ph.D. I extended the research by developing an elaborate framework that clusters network data usually encountered in real life situations, such as social networks where communities evolve with time, product review networks where customers review different products on an ecommerce platform in a bipartite setting, [weighted river networks](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=mVExpwIAAAAJ&citation_for_view=mVExpwIAAAAJ:LkGwnXOMwfcC) with applications to safeguard water quality standards, trade networks, email networks, etc.
 
-This readme is a guided tour to the algorithms used in these models in laymen terms (for technical details, you can always read my peer reviewed technical articles), it's scalability, their applicability in day to day real world applications and future scope.
+This readme is a guided tour to the algorithms used in these models in laymen terms (for technical details, you can always read my peer reviewed technical articles), their scalability, and applicability in day to day real world applications and future scope.
 
 ## Literature Overview
 
@@ -34,7 +34,6 @@ In essence, Variational EM is like trying to solve a puzzle in a dimly lit room 
 
 A picture is worth a thousand words, so I'll draw a less technical figure to illustrate the workings of Variational EM algorithm and how the lower bound (ELBO) is maximized iteratively.
 <img width="917" alt="image" src="https://github.com/amalag-19/ergmclust/assets/10363788/5f088bc2-899f-4302-9529-bcdb2d977bc9">
-
 
 ## Implementation
 For implementation details please refer to the package documentation here.
