@@ -13,7 +13,7 @@ This readme is a guided tour to the algorithms used in these models in laymen te
 
 Here is a brief timeline of the research in the field of Exponential Family Random Graph Models –
 
-<img width="871" alt="Screenshot 2024-02-06 at 11 02 40 PM" src="https://github.com/amalag-19/netclust/assets/10363788/845606b7-5f0d-4bdb-825e-8fab4f77fe3c">
+<img width="900" alt="Screenshot 2024-02-06 at 11 02 40 PM" src="https://github.com/amalag-19/netclust/assets/10363788/845606b7-5f0d-4bdb-825e-8fab4f77fe3c">
 
 ## Algorithm
 Estimation algorithms in ERGMs are based on variational expectation maximization. That's a bunch of jargon, that I break down below
@@ -37,7 +37,7 @@ Variational EM is handy when your data is complex and doesn't fit neatly into si
 In essence, Variational EM is like trying to solve a puzzle in a dimly lit room where you're not entirely sure about the shapes of the pieces. You make educated guesses, adjust them based on what you see, and keep refining your understanding until you find the best fit, all while acknowledging that there might be some ambiguity in your observations.
 
 A picture is worth a thousand words, so I'll draw a less technical figure to illustrate the workings of Variational EM algorithm and how the lower bound (ELBO) is maximized iteratively.
-<img width="917" alt="image" src="https://github.com/amalag-19/ergmclust/assets/10363788/5f088bc2-899f-4302-9529-bcdb2d977bc9">
+<img width="900" alt="image" src="https://github.com/amalag-19/ergmclust/assets/10363788/5f088bc2-899f-4302-9529-bcdb2d977bc9">
 
 ## Implementation
 For implementation details please refer to the package documentation [here](https://github.com/amalag-19/ergmclust/blob/master/ergmclust_documentation.pdf).
